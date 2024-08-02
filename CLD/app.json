@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "CLD",
+    "slug": "CLD",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/rebrandedLogo.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/rebrandedLogo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/rebrandedLogo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "con.zhen.client"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d8ede6c4-e541-41ec-8366-c2065639b85f"
+      }
+    }
+  }
+}
