@@ -5,10 +5,10 @@
 //   validateDevice: "http://192.168.254.131:3001/scanner/device",
 // };
 const config = {
-  timein: "https://capstone-server-teal.vercel.app//scanner/timein",
-  timeout: "https://capstone-server-teal.vercel.app//scanner/timeout",
-  getTimeIn: "https://capstone-server-teal.vercel.app//scanner/getTime",
-  validateDevice: "https://capstone-server-teal.vercel.app//scanner/device",
+  timein: "https://capstone-server-teal.vercel.app/scanner/timein",
+  timeout: "https://capstone-server-teal.vercel.app/scanner/timeout",
+  getTimeIn: "https://capstone-server-teal.vercel.app/scanner/getTime",
+  validateDevice: "https://capstone-server-teal.vercel.app/scanner/device",
 };
 
 export default config;

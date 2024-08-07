@@ -1,67 +1,63 @@
 const config = {
-  showEmployee: "https://capstone-server-teal.vercel.app//employee/list",
+  showEmployee: "https://capstone-server-teal.vercel.app/employee/list",
   showEmployeefiltered:
-    "https://capstone-server-teal.vercel.app//employee/list/filtered",
-  showTypes: "https://capstone-server-teal.vercel.app//employee/types",
-  showPos: "https://capstone-server-teal.vercel.app//employee/positions",
-  showRates: "https://capstone-server-teal.vercel.app//employee/rates",
-  showSched: "https://capstone-server-teal.vercel.app//employee/schedule",
-  addTypes: "https://capstone-server-teal.vercel.app//employee/types/add",
-  addPosition:
-    "https://capstone-server-teal.vercel.app//employee/positions/add",
-  addRate: "https://capstone-server-teal.vercel.app//employee/rates/add",
-  addSchedule: "https://capstone-server-teal.vercel.app//employee/schedule/add",
-  addEmployee: "https://capstone-server-teal.vercel.app//employee/add",
+    "https://capstone-server-teal.vercel.app/employee/list/filtered",
+  showTypes: "https://capstone-server-teal.vercel.app/employee/types",
+  showPos: "https://capstone-server-teal.vercel.app/employee/positions",
+  showRates: "https://capstone-server-teal.vercel.app/employee/rates",
+  showSched: "https://capstone-server-teal.vercel.app/employee/schedule",
+  addTypes: "https://capstone-server-teal.vercel.app/employee/types/add",
+  addPosition: "https://capstone-server-teal.vercel.app/employee/positions/add",
+  addRate: "https://capstone-server-teal.vercel.app/employee/rates/add",
+  addSchedule: "https://capstone-server-teal.vercel.app/employee/schedule/add",
+  addEmployee: "https://capstone-server-teal.vercel.app/employee/add",
   removeDropdown:
-    "https://capstone-server-teal.vercel.app//employee/items/remove",
-  editEmployee: "https://capstone-server-teal.vercel.app//employee/update",
-  removeEmployee: "https://capstone-server-teal.vercel.app//employee/remove",
-  showAttendance: "https://capstone-server-teal.vercel.app//attendance",
+    "https://capstone-server-teal.vercel.app/employee/items/remove",
+  editEmployee: "https://capstone-server-teal.vercel.app/employee/update",
+  removeEmployee: "https://capstone-server-teal.vercel.app/employee/remove",
+  showAttendance: "https://capstone-server-teal.vercel.app/attendance",
   filteredAttendance:
-    "https://capstone-server-teal.vercel.app//attendance/filtered",
-  employeeRequest: "https://capstone-server-teal.vercel.app//employee/request",
+    "https://capstone-server-teal.vercel.app/attendance/filtered",
+  employeeRequest: "https://capstone-server-teal.vercel.app/employee/request",
   updateRequest:
-    "https://capstone-server-teal.vercel.app//employee/request/update",
+    "https://capstone-server-teal.vercel.app/employee/request/update",
   timesheetEmployee:
-    "https://capstone-server-teal.vercel.app//employee/timesheet",
+    "https://capstone-server-teal.vercel.app/employee/timesheet",
   timesheetEmployeeFiltered:
-    "https://capstone-server-teal.vercel.app//employee/timesheet/filtered",
+    "https://capstone-server-teal.vercel.app/employee/timesheet/filtered",
   timesheetDetails:
-    "https://capstone-server-teal.vercel.app//employee/timesheet/details",
-  holidays: "https://capstone-server-teal.vercel.app//holidays",
-  payroll: "https://capstone-server-teal.vercel.app//payroll/employee/details",
+    "https://capstone-server-teal.vercel.app/employee/timesheet/details",
+  holidays: "https://capstone-server-teal.vercel.app/holidays",
+  payroll: "https://capstone-server-teal.vercel.app/payroll/employee/details",
   payrollAdjustment:
-    "https://capstone-server-teal.vercel.app//payroll/employee/adjustment",
+    "https://capstone-server-teal.vercel.app/payroll/employee/adjustment",
   showPayrollAdjustment:
-    "https://capstone-server-teal.vercel.app//payroll/employee/show/adjustment",
+    "https://capstone-server-teal.vercel.app/payroll/employee/show/adjustment",
   payrollDeleteAdjustment:
-    "https://capstone-server-teal.vercel.app//payroll/employee/delete/adjustment",
+    "https://capstone-server-teal.vercel.app/payroll/employee/delete/adjustment",
   showContributions:
-    "https://capstone-server-teal.vercel.app//payroll/contributions",
+    "https://capstone-server-teal.vercel.app/payroll/contributions",
   updateContributions:
-    "https://capstone-server-teal.vercel.app//payroll/contributions/update",
+    "https://capstone-server-teal.vercel.app/payroll/contributions/update",
   getContribution:
-    "https://capstone-server-teal.vercel.app//payroll/contributions/show",
-  addPayroll: "https://capstone-server-teal.vercel.app//make/payroll",
-  payrollLogs: "https://capstone-server-teal.vercel.app//payroll/logs",
-  payrollEmployee: "https://capstone-server-teal.vercel.app//payroll/list",
+    "https://capstone-server-teal.vercel.app/payroll/contributions/show",
+  addPayroll: "https://capstone-server-teal.vercel.app/make/payroll",
+  payrollLogs: "https://capstone-server-teal.vercel.app/payroll/logs",
+  payrollEmployee: "https://capstone-server-teal.vercel.app/payroll/list",
   payrollCutoffLogs:
-    "https://capstone-server-teal.vercel.app//payroll/cutoff/logs",
-  deleteCutoff:
-    "https://capstone-server-teal.vercel.app//payroll/cutoff/delete",
+    "https://capstone-server-teal.vercel.app/payroll/cutoff/logs",
+  deleteCutoff: "https://capstone-server-teal.vercel.app/payroll/cutoff/delete",
   requesthistory:
-    "https://capstone-server-teal.vercel.app//employee/request/history",
-  dashboardDetails: "https://capstone-server-teal.vercel.app//dashboard",
-  updateAttendance:
-    "https://capstone-server-teal.vercel.app//attendance/update",
-  showLeavetypes:
-    "https://capstone-server-teal.vercel.app//employee/leavetypes",
+    "https://capstone-server-teal.vercel.app/employee/request/history",
+  dashboardDetails: "https://capstone-server-teal.vercel.app/dashboard",
+  updateAttendance: "https://capstone-server-teal.vercel.app/attendance/update",
+  showLeavetypes: "https://capstone-server-teal.vercel.app/employee/leavetypes",
   addLeaveTypes:
-    "https://capstone-server-teal.vercel.app//employee/leavetypes/add",
+    "https://capstone-server-teal.vercel.app/employee/leavetypes/add",
   changeEmployeePass:
-    "https://capstone-server-teal.vercel.app//mobile/forgotpass/new",
-  employeeInfo: "https://capstone-server-teal.vercel.app//employee/information",
-  login: "https://capstone-server-teal.vercel.app//payroll/login",
+    "https://capstone-server-teal.vercel.app/mobile/forgotpass/new",
+  employeeInfo: "https://capstone-server-teal.vercel.app/employee/information",
+  login: "https://capstone-server-teal.vercel.app/payroll/login",
 };
 
 // const config = {

@@ -14,21 +14,21 @@
 // };
 
 const config = {
-  login: "https://capstone-server-teal.vercel.app//mobile/validateUser",
-  attendance: "https://capstone-server-teal.vercel.app//mobile/attendance",
-  sendRequest: "https://capstone-server-teal.vercel.app//mobile/sendrequest",
-  loadItem: "https://capstone-server-teal.vercel.app//mobile/leave/types",
-  payrollCutoff: "https://capstone-server-teal.vercel.app//mobile/payroll",
+  login: "https://capstone-server-teal.vercel.app/mobile/validateUser",
+  attendance: "https://capstone-server-teal.vercel.app/mobile/attendance",
+  sendRequest: "https://capstone-server-teal.vercel.app/mobile/sendrequest",
+  loadItem: "https://capstone-server-teal.vercel.app/mobile/leave/types",
+  payrollCutoff: "https://capstone-server-teal.vercel.app/mobile/payroll",
   cutoffdetails:
-    "https://capstone-server-teal.vercel.app//mobile/cutoff/details",
+    "https://capstone-server-teal.vercel.app/mobile/cutoff/details",
   showReqHistory:
-    "https://capstone-server-teal.vercel.app//mobile/employee/request",
+    "https://capstone-server-teal.vercel.app/mobile/employee/request",
 
-  otp: "https://capstone-server-teal.vercel.app//mobile/otp",
-  checkUserEmail: "https://capstone-server-teal.vercel.app//mobile/checkuser",
-  addEmail: "https://capstone-server-teal.vercel.app//mobile/setEmail",
-  forgotpassword: "https://capstone-server-teal.vercel.app//mobile/forgotpass",
-  logout: "https://capstone-server-teal.vercel.app//mobile/logout",
+  otp: "https://capstone-server-teal.vercel.app/mobile/otp",
+  checkUserEmail: "https://capstone-server-teal.vercel.app/mobile/checkuser",
+  addEmail: "https://capstone-server-teal.vercel.app/mobile/setEmail",
+  forgotpassword: "https://capstone-server-teal.vercel.app/mobile/forgotpass",
+  logout: "https://capstone-server-teal.vercel.app/mobile/logout",
 };
 
 export default config;
