@@ -1,5 +1,5 @@
 const { startQuery } = require("../database/config");
-const fs = require("fs");
+require("dotenv").config();
 class Dashboard {
   DashboardDetails = async () => {
     const employee = await this.employee();
@@ -62,7 +62,7 @@ class Dashboard {
 
   holidays = () => {
     try {
-      const data = fs.readFileSync("./json/holidays.json");
+      const data = process.env.HOLIDAYS;
       const result = JSON.parse(data);
       return result;
     } catch (error) {

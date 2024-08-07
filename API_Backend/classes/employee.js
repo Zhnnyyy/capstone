@@ -3,7 +3,7 @@ const mysql = require("mysql2");
 const crypto = require("crypto");
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: process.env.HOST,
+  host: process.env.host,
   user: process.env.user,
   port: process.env.port,
   password: process.env.pass,

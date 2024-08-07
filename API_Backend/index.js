@@ -32,8 +32,11 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.json());
 //DASHBOARD
-
+app.get("/sample", (req, res) => {
+  res.json({ msg: "Hey its you!!" });
+});
 app.post("/payroll/login", async (req, res) => {
   try {
     const { username, password } = req.body;

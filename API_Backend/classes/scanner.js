@@ -1,5 +1,5 @@
 const { startQuery } = require("../database/config");
-const fs = require("fs");
+require("dotenv").config();
 class Scanner {
   #date;
   #uid;
@@ -42,8 +42,7 @@ class Scanner {
 
   regularHolidayChecker = (date) => {
     try {
-      const data = fs.readFileSync("./json/holidays.json");
-      const result = JSON.parse(data);
+      const data = process.env.HOLIDAYS;
       const regularHolidays = result.Regular_Holidays;
       for (const holiday of regularHolidays) {
         if (holiday.date === date) {
@@ -57,7 +56,7 @@ class Scanner {
   };
   specialHolidayChecker = (date) => {
     try {
-      const data = fs.readFileSync("./json/holidays.json");
+      const data = process.env.HOLIDAYS;
       const result = JSON.parse(data);
       const regularHolidays = result.Special_Holidays;
       for (const holiday of regularHolidays) {

@@ -1,5 +1,5 @@
 const { startQuery } = require("../database/config");
-const fs = require("fs");
+require("dotenv").config();
 class Attendance {
   #startDate;
   #endDate;
@@ -53,8 +53,9 @@ const currentDate = () => {
   return new Date().toISOString().substr(0, 10);
 };
 const isRegHoliday = () => {
-  const result = JSON.parse(fs.readFileSync("./json/holidays.json"));
-  const data = result.Regular_Holidays;
+  const result = process.env.HOLIDAYS;
+  const response = JSON.parse(result);
+  const data = response.Regular_Holidays;
   for (const _date of data) {
     const res = _date.date;
     if (currentDate() == res) {

@@ -1,5 +1,5 @@
 const { startQuery } = require("../database/config");
-const fs = require("fs");
+require("dotenv").config();
 class RequestLeave {
   #UID;
   #status;
@@ -113,7 +113,7 @@ class RequestLeave {
 
   regularHolidayChecker = (date) => {
     try {
-      const data = fs.readFileSync("./json/holidays.json");
+      const data = process.env.HOLIDAYS;
       const result = JSON.parse(data);
       const regularHolidays = result.Regular_Holidays;
       for (const holiday of regularHolidays) {
@@ -128,7 +128,7 @@ class RequestLeave {
   };
   specialHolidayChecker = (date) => {
     try {
-      const data = fs.readFileSync("./json/holidays.json");
+      const data = process.env.HOLIDAYS;
       const result = JSON.parse(data);
       const regularHolidays = result.Special_Holidays;
       for (const holiday of regularHolidays) {

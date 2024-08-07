@@ -1,4 +1,4 @@
-const fs = require("fs");
+require("dotenv").config();
 const { startQuery } = require("../database/config");
 class Timesheet {
   #UID;
@@ -98,7 +98,7 @@ class Timesheet {
 
   holidays = async () => {
     try {
-      const data = fs.readFileSync("./json/holidays.json");
+      const data = process.env.HOLIDAYS;
       const result = JSON.parse(data);
       return result;
     } catch (error) {
